@@ -1,0 +1,44 @@
+[
+    {
+      "id": "TS0001-0605", "date": "June 5th, 2023", "description": "Fleming & Co.", "amount": "$5.00", "balance": "$2082.79", "details": {
+        "type": "Furnitures",
+        "category": "Office Furniture",
+        "notes": "1,000,000 trombones for Edith"
+      }
+    },
+    {
+      "id": "TS0002-0612", "date": "June 12th, 2023", "description": "Golden Sun Bakery", "amount": "$10.00", "balance": "$2087.79", "details": {
+        "type": "Representation",
+        "category": "Food",
+        "notes": "Biggest sausage EVER!\n My dream come true XD"
+      }
+    },
+    {
+      "id": "TS0003-0620", "date": "June 20th, 2023", "description": "Golden Sun Bakery", "amount": "$20.00", "balance": "$2097.79", "details": {
+        "type": "Representation",
+        "category": "Food",
+        "notes": "Pickles & wine..."
+      }
+    },
+    {
+      "id": "TS0004-0627", "date": "June 27th, 2023", "description": "Oil factory Inc.", "amount": "$30.00", "balance": "$2117.79", "details": {
+        "type": "Electronic",
+        "category": "Services",
+        "notes": "Annual refilling"
+      }
+    },
+    {
+      "id": "TS0005-0630", "date": "June 30th, 2023", "description": "Golden Sun Bakery", "amount": "$40.00", "balance": "$2147.79", "details": {
+        "type": "Representation",
+        "category": "Food",
+        "notes": ""
+      }
+    },
+    {
+      "id": "TS0005-0650", "date": "June 30th, 2023", "description": "Golden Sun Bakery", "amount": "$50.00", "balance": "$2187.79", "details": {
+        "type": "Representation",
+        "category": "Food",
+        "notes": ""
+      }
+    }
+]

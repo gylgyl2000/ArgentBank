@@ -17,7 +17,7 @@
 
 <img src="https://img.shields.io/badge/styled--components-5.3.9-orange"/>&nbsp;&nbsp;
 
-Argent Bank is an appliation for account and profile login and management
+Argent Bank is an application for account and profile login and management
 
 ## Getting Started
 
@@ -25,12 +25,12 @@ Argent Bank is an appliation for account and profile login and management
 
 1. Fork the repository
 2. Clone it on your computer
-3. for using api data: 
+3. For using api data: 
     * From home directory, open a terminal and run: `cd API/`
     * Install the dependencies with `npm install` or `yarn install`
     * Start local dev server with `npm run dev:server`
     * Populate database with two users with `npm run populate-db`
-4. for using app
+4. For using app:
    * From home directory, open the terminal and run: `cd Front/`
    * Install the dependencies with `npm install` or `yarn install`
    * Then run `npm start` or `yarn start` (starts the app), App should start on port 3000 ([http://localhost:3000](http://localhost:3000)).

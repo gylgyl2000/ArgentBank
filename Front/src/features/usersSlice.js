@@ -2,12 +2,6 @@ import { createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 import { rememberMeSelector, statusSelector } from '../utils/selectors'
 
-const BASE_URL = 'http://localhost:3001/api/v1/user/'
-const MOCK_API = '../../ArgentBank/mock-api'
-
-const DATA_URL = process.env.NODE_ENV === 'development' ? BASE_URL : MOCK_API
-const extension = process.env.NODE_ENV === 'development' ? '' : '.json'
-
 // User initial state
 const initialState = {
     status: 'void',
@@ -50,7 +44,7 @@ export function signinUser(email, password, rememberMe) {
         }
         dispatch(fetching())
         try {
-            const response = await axios.post(`${DATA_URL}login${extension}`,
+            const response = await axios.post('http://localhost:3001/api/v1/user/login',
                 { email, password }
             )
             const token = await response.data.body.token
@@ -80,7 +74,7 @@ export function getUserProfile(token) {
             return
         }
         try {
-            const response = await axios.post(`${DATA_URL}profile${extension}`,
+            const response = await axios.post('http://localhost:3001/api/v1/user/profile',
                 { request: getUserProfile},
                 { headers: { Authorization: token } }
             )
@@ -103,7 +97,7 @@ export function updateUserProfile(token, values) {
         }
         dispatch(fetching())
         try {
-            const response = await axios.put(`${DATA_URL}profile${extension}`,
+            const response = await axios.put('http://localhost:3001/api/v1/user/profile',
                 { firstName: values.firstName,
                     lastName: values.lastName,
                 },
